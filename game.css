@@ -1,0 +1,100 @@
+body{
+    height: 100vh;
+    background-color: black;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#game_container{
+    border-radius: 10px;
+    overflow: hidden;
+    position:relative;
+}
+
+.background{
+    background-color: rgb(52, 166, 251);
+    table-layout: fixed;
+    border-spacing: 0;
+}
+
+.background td{
+    padding: 0;
+}
+
+.lava{
+    background-color: rgb(255, 100, 100);
+}
+
+.wall{
+    background-color: white;
+}
+
+.actor{
+    position: absolute;
+}
+
+.player{
+    background-color: rgb(64, 64, 64);
+}
+
+.coin{
+    background-color: rgb(241, 229, 89);
+}
+
+.monster{
+    background-color: red;
+}
+
+
+.lost .player{
+    background-color: rgb(160, 64, 64);
+}
+
+.won .player{
+    box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
+
+.game{
+    overflow: hidden;
+    max-width: 600px;
+    max-height: 450px;
+    position: relative;
+}
+
+
+#lives_container{
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    z-index: 99999;
+    margin: 30px;
+    display: flex;
+}
+#lives_container span{
+    margin-right: 3px;
+    font-size: 1.3em;
+}
+
+#paused{
+    visibility: hidden;
+    position:absolute;
+    font-size: small;
+    font-weight: bold;
+    opacity: 0.5;
+    z-index: 99999;
+    margin: 30px;
+}
+
+.heartIcon{
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: -0.125em;
+}
+
+.pauseIcon{
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.125em;
+}
